@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toko Buku</title>
+<style>
+    body {
+        background-color: #c0f2ff; 
+        height: 100vh; 
+        margin: 0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    fieldset {
+        width: 400px;
+        background-color: #FFF; 
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #69dcff;
+    }
+    legend {
+        color: #69f5ff; 
+        font-weight: bold;
+        text-align: center;
+    }
+    input {
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #69fff8; 
+        border-radius: 5px;
+        width: 100%; 
+    }
+    button {
+        padding: 8px;
+        margin-top: 10px;
+        background-color: #69e1ff; 
+        color: #FFF; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%; 
+    }
+</style>
+    
+</head>
+<body>
+    
+    <fieldset>
+        
+        <legend>Input Data Buku</legend>
+
+        
+        <form action="tambah_proses.php" method="post">
+            <input type="text" name="ID_Buku" placeholder="ID Buku">
+            <br><br>
+            <input type="text" name="Kategori" placeholder="Kategori">
+            <br><br>
+            <input type="text" name="Nama_Buku" placeholder="Nama Buku">
+            <br><br>
+            <input type="text" name="Harga" placeholder="Harga">
+            <br><br>
+            <input type="text" name="Stok" placeholder="Stok">
+            <br><br>
+            <input type="text" name="Penerbit" placeholder="Penerbit">
+            <br><br>
+            <button type="submit" name="submit">SIMPAN</button>
+            <button type="reset" name="reset">RESET</button>
+        </form>
+    </fieldset>
+</body>
+</html>
